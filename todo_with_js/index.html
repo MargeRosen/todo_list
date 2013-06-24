@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="resources/layout.css" type="text/css">
+    <!-- <script src="resources/javascript.js" type="text/javascript" charset="utf-8"></script> -->
+  </head>
+  <body>
+
+    <div id="header" class="content">
+      <h1>My To Do List</h1>
+    </div>
+
+    <h2>Click here to add a task</h2>
+
+    <div id="list">
+      <input type='radio' name='task-radio'> <a href=#task><span id="task">task</span></a> 
+    <!--  if task is checked how do we make the task text disappear?  
+          Make the task a link and use CSS to make the link disappear 
+          when a.active?-->
+      
+    </div>
+    
+    <p>Click the task when completed.</p>
+    
+    <!-- experiment 2   -->
+    <script type="text/javascript">
+    function replaceTask() {
+    var myNewTask = window.prompt('Enter a task!');
+    document.getElementById('task').innerHTML = myNewTask;
+    }
+
+    document.onclick = replaceTask;
+    </script>
+
+    <!-- experiment 1   -->
+    <script type="text/javascript">   
+    prompt("Enter a new task")
+    console.log()
+    </script>   
+  </body>
+</html>
